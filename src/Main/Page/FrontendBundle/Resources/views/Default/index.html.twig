@@ -365,9 +365,6 @@
                   url: $(this).attr('action'),
                   type: 'POST',
                   data: data,
-                  beforeSend: function () {
-                    $('form#form-contact-us').html('{% include "ThemeBootstrapBundle:Helper:processing.html.twig" %}');
-                  },
                   success: function (data) {
                     $('form#form-contact-us').html('{% include "MainPageFrontendBundle:Helper:sent_successfully.html.twig" %}');
                   },
