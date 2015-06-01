@@ -1,7 +1,7 @@
 {% extends 'MainPageFrontendBundle:Default:base.html.twig' %}
 
 
-{% block content %}
+{% block body %}
   <style type="text/css">
     .contact-us-form{
       background-color: #034e82;
@@ -218,7 +218,7 @@
     </nav>
   </div>
   {% include 'MainPageFrontendBundle:Default:contact_content.html.twig' %}
-{% endblock content %}
+{% endblock body %}
 
 {% block javascripts %}
   {{ parent() }}
@@ -232,11 +232,11 @@
             var markerMiamiNorthBeach = null;
             var markerBogota = null;
 
-            $('#carousel-logintofrench').on('slid.bs.carousel', function(e) {
+            $('#carousel-logintofrench').on('slid.bs.carousel', function (e) {
             });
 
 
-            $(function() {
+            $(function () {
               /*MAPA*/
               function initialize() {
                 var mapOptions = {
@@ -343,13 +343,13 @@
               })();
             }
             /* SCROLL */
-            $(document).on('click', 'a.scrollTo', function(event) {
+            $(document).on('click', 'a.scrollTo', function (event) {
               event.preventDefault();
               $.scrollTo($(this).attr('data-tag'), 600, {offset: -68});
             });
 
 
-            $(document).on('submit', 'form#form-contact-us', function(event) {
+            $(document).on('submit', 'form#form-contact-us', function (event) {
               event.preventDefault();
               $(this).find('input').attr('readonly', '');
               $(this).find('textarea').attr('readonly', '');
@@ -365,13 +365,13 @@
                   url: $(this).attr('action'),
                   type: 'POST',
                   data: data,
-                  beforeSend: function() {
+                  beforeSend: function () {
                     $('form#form-contact-us').html('{% include "ThemeBootstrapBundle:Helper:processing.html.twig" %}');
                   },
-                  success: function(data) {
+                  success: function (data) {
                     $('form#form-contact-us').html('{% include "MainPageFrontendBundle:Helper:sent_successfully.html.twig" %}');
                   },
-                  error: function() {
+                  error: function () {
                     alert('ERROR');
                   }
                 });
@@ -380,4 +380,4 @@
             });
 
   </script>
-{% endblock %}
+{% endblock  %}
