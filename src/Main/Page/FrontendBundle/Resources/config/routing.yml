@@ -1,0 +1,17 @@
+frontend_homepage:
+    pattern:  /
+    defaults: { _controller: MainPageFrontendBundle:Default:index }
+frontend_about:
+    pattern:  /about
+    defaults: { _controller: MainPageFrontendBundle:Default:about }
+frontend_lessons:
+    pattern:  /lessons-and-translations
+    defaults: { _controller: MainPageFrontendBundle:Default:lessons }
+frontend_contact:
+    pattern:  /contact
+    defaults: { _controller: MainPageFrontendBundle:Default:contact }
+
+email_form:
+    pattern:  /contact/form
+    defaults: { _controller: MainPageFrontendBundle:Default:email }
+  

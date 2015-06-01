@@ -1,0 +1,27 @@
+header:
+  home: Home
+  about: About
+  lessons: Lessons & translations
+  contact: Contact Us
+  language: Language
+
+form:
+  save: Save
+  accept: Accept
+  cancel: Cancel   
+  close: Close
+  edit: Edit
+  add: Add
+  delete: Delete
+  new: New
+  new_fem: New
+  loading: Loading ...
+  developing: In development ...
+  find_more: find more
+  information: Information
+  processing: Processing ...
+  sent_successfully: Message sent successfully
+contact:
+  title: Contact Us
+  emailsmall: email
+  phone: phone

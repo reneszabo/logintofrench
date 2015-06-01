@@ -1,0 +1,383 @@
+{% extends 'MainPageFrontendBundle:Default:base.html.twig' %}
+
+
+{% block content %}
+  <style type="text/css">
+    .contact-us-form{
+      background-color: #034e82;
+      *background-color: #034e82;
+      background-image: -moz-linear-gradient(top, #015c96, #034e82);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#015c96), to(#034e82));
+      background-image: -webkit-linear-gradient(top, #015c96, #034e82);
+      background-image: -o-linear-gradient(top, #015c96, #034e82);
+      background-image: linear-gradient(top, #015c96, #034e82);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff015c96', endColorstr='#ff034e82', GradientType=0);
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    }
+    .contact-us-directions{
+      background-color: #f2f2f2;
+      margin-left: 0;
+    }
+    .table-contactanos-th{
+      vertical-align: top;
+      text-align: right;
+      padding-right: 8px;
+    }
+    .form input ,.form textarea{
+      background-color: #034e82;
+      color: #f2f2f2;
+    }
+    .form input{
+      height: 35px;
+    }
+    .form label{
+      color: white;
+      font-size: 16px;
+    }
+    #map-canvas {
+      margin: 0;
+      padding: 0;
+      height: 350px;
+    }
+
+    .slider-box-text{
+      box-shadow: black 0px 4px 10px -5px;
+      text-shadow: none;
+      opacity: 0.65;
+      padding: 10px;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      white-space: nowrap;
+      height: auto; 
+      border-width: 0px;
+      -webkit-transform: rotate(0deg) scale(1, 1);
+      display: inline-block;
+    }
+
+  </style>
+  <div id="home">
+    <div id="carousel-logintofrench" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-logintofrench" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-logintofrench" data-slide-to="1"></li>
+        <li data-target="#carousel-logintofrench" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="{{ asset('img/study001.jpg') }}" alt="Login to French" style="height:620px;" />
+              </div>
+              <div class="col-md-7">
+                <div class="text-center" style="margin-top: 150px;">
+                  <h2 class="blue">Learn french now!</h2>
+                  <a class="btn btn-danger scrollTo" href="{{ path('frontend_contact') }}" data-tag="#contact" > get $150 off!</a>
+                  <h3 class="blue">Taking 10 hours per month!</h3>
+                  <h4>Contact us for more information</h4>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        <div class="item" style="background: url({{ asset('img/study002.jpg') }}) no-repeat; background-size:  100% ; background-position:center center; ">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-md-offset-7">
+                <div class="text-center" style="margin-top: 150px;">
+                  <h1 class="white">Private lessons for children</h1>
+                  <a class="btn btn-danger scrollTo" href="{{ path('frontend_contact') }}" data-tag="#contact" > get $150 off!</a>
+                  <h3 class="blue">Taking 10 hours per month!</h3>
+                  <h4 class="white">Contact us for more information</h4>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        <div class="item" style="background: url({{ asset('img/study003.jpg') }}) no-repeat; background-size:  100% ;background-position:center center; ">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-md-offset-7">
+                <div class="text-center" style="margin-top: 150px;">
+                  <h1 class="white slider-box-text">Virtual lessons with Skype</h1>
+                  <a class="btn btn-danger scrollTo" href="{{ path('frontend_contact') }}" data-tag="#contact" > get $150 off!</a>
+                  <div style="margin-top: 10px;">
+                    <h3 class="blue slider-box-text">Taking 10 hours per month!</h3>
+                  </div>
+                  <h4 class="white slider-box-text">Contact us for more information</h4>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-logintofrench" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-logintofrench" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+
+  {#      ABOUT      #}
+
+  <div id="about" class="section-blue ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 margin-top-bottom">
+          <div>
+            <table>
+              <tr>
+                <td style="width: 33%;"><div class="separator white"></div></td>
+                <td style="width: 480px; min-width: 480px; max-width: 480px; text-wrap: avoid;">
+                  <h1 class="text-center white">{{ 'header.about'|trans }}</h1>
+                </td>
+                <td style="width: 33%; "><div class="separator white"></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="section-gray">
+    {% include 'MainPageFrontendBundle:Default:about_content.html.twig' %}
+  </div>
+
+  {# LESSONS  #}
+
+
+  <div id="lessons" class=""> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 margin-top-bottom">
+          <div>
+            <table>
+              <tr>
+                <td style="width: 50%;"><div class="separator blue"></div></td>
+                <td style="width: 350px; min-width: 380px; max-width: 380px; text-wrap: avoid;">
+                  <h1 class="text-center blue">{{ 'header.lessons'|trans }}</h1>
+                </td>
+                <td style="width: 50%; "><div class="separator blue"></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  {% include 'MainPageFrontendBundle:Default:lessons_contant.html.twig' %}
+
+  {#  CONTACT #}
+
+  <div id="contact" class="section-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 margin-top-bottom">
+          <div>
+            <table>
+              <tr>
+                <td style="width: 33%;"><div class="separator white"></div></td>
+                <td style="width: 480px; min-width: 480px; max-width: 480px; text-wrap: avoid;">
+                  <h1 class="text-center white">{{ 'header.contact'|trans }}</h1>
+                </td>
+                <td style="width: 33%; "><div class="separator white"></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="border-decoration" style="height: 350px;">
+    <div>
+      <div id="map-canvas"></div>
+    </div>
+  </div>
+  <div class="">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="position: relative;">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#AventuraMiami" onclick="changeMap(1);">Aventura Miami</a></li>
+          <li><a href="#SunnyIslesMiami" onclick="changeMap(2);">Sunny Isles Miami</a></li>
+          <li><a href="#SurfsideMiami" onclick="changeMap(3);">Surfside Miami</a></li>
+          <li><a href="#BalHarbourMiami" onclick="changeMap(4);">Bal Harbour Miami</a></li>
+          <li><a href="#NorthMiamiBeach" onclick="changeMap(5);">North Miami Beach</a></li>
+          <li><a href="#Bogota" onclick="changeMap(6);">Bogota</a></li>
+          <li><a href="#ViewAll" onclick="changeMap(7);">View all map</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  {% include 'MainPageFrontendBundle:Default:contact_content.html.twig' %}
+{% endblock content %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script type="text/javascript">
+            var map;
+            var markerMiamiAventura = null;
+            var markerMiamiSunny = null;
+            var markerMiamiSurfside = null;
+            var markerMiamiBalHarbour = null;
+            var markerMiamiNorthBeach = null;
+            var markerBogota = null;
+
+            $('#carousel-logintofrench').on('slid.bs.carousel', function(e) {
+            });
+
+
+            $(function() {
+              /*MAPA*/
+              function initialize() {
+                var mapOptions = {
+                  zoom: 4,
+                  mapTypeControl: false,
+                  disableDoubleClickZoom: true,
+                  disableDefaultUI: false,
+                  zoomControl: false,
+                  keyboardShortcuts: false,
+                  scrollwheel: false,
+                  draggable: false,
+                  center: new google.maps.LatLng('18.957478', '-80.142573'),
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'),
+                        mapOptions);
+                addMarkers();
+              }
+
+              google.maps.event.addDomListener(window, 'load', initialize);
+
+
+            });
+            function addMarkers() {
+              markerMiamiAventura = setMarker(25.957478, -80.142573);
+              markerMiamiSunny = setMarker(25.942807, -80.122964);
+              markerMiamiSurfside = setMarker(25.879265, -80.125474);
+              markerMiamiBalHarbour = setMarker(25.891971, -80.126678);
+              markerMiamiNorthBeach = setMarker(25.950959, -80.192534);
+              markerBogota = setMarker(4.702185, -74.028805);
+            }
+            function setMarker(k, j) {
+              return new google.maps.Marker({
+                map: map,
+                animation: google.maps.Animation.DROP,
+                position: new google.maps.LatLng(k, j)
+              });
+            }
+            function changeMap(address) {
+              switch (address) {
+                case 1:
+                  map.setZoom(14);
+                  map.setCenter(markerMiamiAventura.getPosition());
+                  markerMiamiAventura.setMap(null);
+                  markerMiamiAventura = setMarker(25.957478, -80.142573);
+                  break;
+                case 2:
+                  map.setZoom(14);
+                  map.setCenter(markerMiamiSunny.getPosition());
+                  markerMiamiSunny.setMap(null);
+                  markerMiamiSunny = setMarker(25.942807, -80.122964);
+                  break;
+                case 3:
+                  map.setZoom(14);
+                  map.setCenter(markerMiamiSurfside.getPosition());
+                  markerMiamiSurfside.setMap(null);
+                  markerMiamiSurfside = setMarker(25.879265, -80.125474);
+                  break;
+                case 4:
+                  map.setZoom(14);
+                  map.setCenter(markerMiamiBalHarbour.getPosition());
+                  markerMiamiBalHarbour.setMap(null);
+                  markerMiamiBalHarbour = setMarker(25.891971, -80.126678);
+                  break;
+                case 5:
+                  map.setZoom(14);
+                  map.setCenter(markerMiamiNorthBeach.getPosition());
+                  markerMiamiNorthBeach.setMap(null);
+                  markerMiamiNorthBeach = setMarker(25.950959, -80.192534);
+                  break;
+                case 6:
+                  map.setZoom(14);
+                  map.setCenter(markerBogota.getPosition());
+                  markerBogota.setMap(null);
+                  markerBogota = setMarker(4.702185, -74.028805);
+                  break;
+                default:
+                  map.setZoom(4);
+                  map.setCenter(new google.maps.LatLng('18.957478', '-80.142573'));
+                  break;
+              }
+            }
+
+            function removeMarkers() {
+              removeMarkerWithAnimation(markerMiamiAventura);
+              removeMarkerWithAnimation(markerMiamiSunny);
+              removeMarkerWithAnimation(markerMiamiSurfside);
+              removeMarkerWithAnimation(markerMiamiBalHarbour);
+              removeMarkerWithAnimation(markerMiamiNorthBeach);
+              removeMarkerWithAnimation(markerBogota);
+            }
+
+            function removeMarkerWithAnimation(marker) {
+              (function animationStep() {
+                var newPosition = map.getProjection().fromLatLngToPoint(marker.getPosition());
+                newPosition.y -= 10 / (1 << map.getZoom());
+                newPosition = map.getProjection().fromPointToLatLng(newPosition);
+                marker.setPosition(newPosition);
+                if (map.getBounds().getNorthEast().lat() < newPosition.lat()) {
+                  marker.setMap(null);
+                } else {
+                  setTimeout(animationStep, 10);
+                }
+              })();
+            }
+            /* SCROLL */
+            $(document).on('click', 'a.scrollTo', function(event) {
+              event.preventDefault();
+              $.scrollTo($(this).attr('data-tag'), 600, {offset: -68});
+            });
+
+
+            $(document).on('submit', 'form#form-contact-us', function(event) {
+              event.preventDefault();
+              $(this).find('input').attr('readonly', '');
+              $(this).find('textarea').attr('readonly', '');
+
+              var data = $(this).serializeArray();
+              if ($("#french_save").attr('clicked') == 1) {
+                var aux = {
+                  name: 'french[save]',
+                  value: 1
+                };
+                data.push(aux);
+                $.ajax({
+                  url: $(this).attr('action'),
+                  type: 'POST',
+                  data: data,
+                  beforeSend: function() {
+                    $('form#form-contact-us').html('{% include "ThemeBootstrapBundle:Helper:processing.html.twig" %}');
+                  },
+                  success: function(data) {
+                    $('form#form-contact-us').html('{% include "MainPageFrontendBundle:Helper:sent_successfully.html.twig" %}');
+                  },
+                  error: function() {
+                    alert('ERROR');
+                  }
+                });
+
+              }
+            });
+
+  </script>
+{% endblock %}

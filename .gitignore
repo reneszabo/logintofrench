@@ -1,0 +1,39 @@
+# -- Symfony2 -----------------------------------------
+app/bootstrap.php.cache
+app/bootstrap_cache.php.cache
+app/config/parameters.ini
+app/config/parameters.yml
+app/config/parameters.yml.dist
+app/cache/*
+app/logs/*
+vendor/*
+web/bundles/*
+web/uploads/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+web/css/*
+web/js/*
+com
+# -- Composer -----------------------------------------
+composer.phar
+composer.lock
+# -- PHPUnit ------------------------------------------
+app/phpunit.xml  
+
+# netbeans
+nbproject/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+bin/
+
+# -- Sistemas Operativos ------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

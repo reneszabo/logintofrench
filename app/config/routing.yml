@@ -1,0 +1,4 @@
+main_page_frontend:
+    resource: "@MainPageFrontendBundle/Resources/config/routing.yml"
+    prefix:   /
+

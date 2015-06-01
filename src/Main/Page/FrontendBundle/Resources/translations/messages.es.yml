@@ -1,0 +1,22 @@
+header:
+  home: Inicio
+  about: Sobre nosotros
+  lessons: Lecciones y traducciones
+  contact: Contactanos
+  language: Lenguaje
+
+form:
+  save: Guardar
+  accept: Aceptar
+  cancel: Cancelar   
+  close: Cerrar
+  edit: Editar
+  add: Agregar
+  delete: Eliminar
+  new: Nuevo
+  new_fem: Nueva
+  loading: Cargando ...
+  developing: En desarrollo ...
+  find_more: buscar mas
+  information: Información
+  processing: Procesando ...
