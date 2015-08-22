@@ -1,7 +1,9 @@
 header:
   home: Home
   about: About
-  lessons: Lessons & translations
+  online: Online Courses
+  lessons: Lessons
+  translations: Translations
   contact: Contact Us
   language: Language
 

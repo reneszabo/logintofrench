@@ -47,39 +47,44 @@
       <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
       <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
       <style type="text/css" >
-        #logo {
-          width: 32px;
-          margin-top: -5px;
+        body {
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 18px;
+          line-height: 1.42857143;
+          color: #333;
+          background-color: #fff;
         }
+
+        #header{
+          font-size: 30px;
+        }
+        #header-first{
+          height: 70px;
+        }
+        #header h3{
+          font-size: 52px;
+        }
+        #logo {
+          width: 64px;
+        }
+
         legend{
           margin-bottom: 12px ;
         }
         h1,h2,h3,h4{
           margin-top: 0px;
         }
-        h1.blue, h2.blue, h3.blue, h4.blue{
-          color: #1388fe;
-        }
-        h1.white,h2.white,h3.white,h4.white{
-          margin-top: 6px;
-          color: white;
-        }
-        .profile-dropdown{
-          margin-right: 15px;
-        }
-        .profile-dropdown > a{
-          margin: 0;
-          padding: 0 !important;
-        }
-        ul.nav li.dropdown:hover > ul.dropdown-menu {
-          display: block; 
-        }
+
         .navbar-logintofrench{
           background-color: #ffffff;
           border-color: #ffffff;
-          border-bottom: 9px solid rgb(0, 136, 203);
         }
-
+        .navbar-default .navbar-nav>li>a {
+          color: #002395;
+        }
+        .label-info {
+          background-color: #002395;
+        }
         .margin-top-bottom{
           margin-top: 40px;
           margin-bottom: 40px; 
@@ -87,55 +92,6 @@
         .padding-top-bottom{
           padding-bottom: 20px;
           padding-top: 20px;
-        }
-
-        /* SECTIONS */
-
-        .section-blue{
-          background-color: #015c96;
-        }
-        .section-gray{
-          background-color: #e6e6e6;
-          *background-color: #e6e6e6;
-          background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
-          background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
-          background: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
-          background: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
-          background: linear-gradient(top, #f2f2f2, #e6e6e6);
-          background-repeat: repeat-x;
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe6e6e6', GradientType=0);
-          filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-        }
-
-        /*SEPARATORS*/
-
-        .separator.white {
-          border: 0;
-          height: 3px;
-          margin-top: 18px;
-          margin-bottom: 18px;
-          width: 100%;
-          background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,0,0,0)), color-stop(15%,rgba(255,0,0,0)), color-stop(50%,rgba(255,0,0,0.65)), color-stop(85%,rgba(255,0,0,0)), color-stop(100%,rgba(255,0,0,0))); /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-          background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
-          background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0) 85%,rgba(255,255,255,0) 100%); /* W3C */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff0000', endColorstr='#00ff0000',GradientType=1 ); /* IE6-9 */
-        }
-        .separator.blue {
-          border: 0;
-          height: 3px;
-          margin-top: 18px;
-          margin-bottom: 18px;
-          width: 100%;
-          background: -moz-linear-gradient(left, rgba(0, 136, 203,0) 0%, rgba(0, 136, 203,0) 15%, rgba(0, 136, 203,0.65) 50%, rgba(0, 136, 203,0) 85%, rgba(0, 136, 203,0) 100%); /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,0,0,0)), color-stop(15%,rgba(255,0,0,0)), color-stop(50%,rgba(255,0,0,0.65)), color-stop(85%,rgba(255,0,0,0)), color-stop(100%,rgba(255,0,0,0))); /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(left, rgba(0, 136, 203,0) 0%,rgba(0, 136, 203,0) 15%,rgba(0, 136, 203,0.65) 50%,rgba(0, 136, 203,0) 85%,rgba(0, 136, 203,0) 100%); /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(left, rgba(0, 136, 203,0) 0%,rgba(0, 136, 203,0) 15%,rgba(0, 136, 203,0.65) 50%,rgba(0, 136, 203,0) 85%,rgba(0, 136, 203,0) 100%); /* Opera 11.10+ */
-          background: -ms-linear-gradient(left, rgba(0, 136, 203,0) 0%,rgba(0, 136, 203,0) 15%,rgba(0, 136, 203,0.65) 50%,rgba(0, 136, 203,0) 85%,rgba(0, 136, 203,0) 100%); /* IE10+ */
-          background: linear-gradient(left, rgba(0, 136, 203,0) 0%,rgba(0, 136, 203,0) 15%,rgba(0, 136, 203,0.65) 50%,rgba(0, 136, 203,0) 85%,rgba(0, 136, 203,0) 100%); /* W3C */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff0000', endColorstr='#00ff0000',GradientType=1 ); /* IE6-9 */
         }
 
         /* WELL */
@@ -174,34 +130,7 @@
           -webkit-animation:fade 3000ms infinite;
         }
 
-        #carousel-logintofrench, #carousel-logintofrench .item {
-          height: 620px;
-        }
 
-        /* --- FACE ---- */
-
-        .facebook-icon {
-          background: #43609C;
-          border-radius: 9%;
-          height: 20px;
-          width: 20px; 
-        }
-        .facebook-icon:hover {
-        }
-
-        .facebook-icon:after {
-          color: #fff;
-          content: "f";
-          display: block;
-          font-family: Facebook Letter Faces, Arial;
-          font-size: 20px;
-          font-weight: bold;
-          margin: 4% 0 0 50%; 
-        }
-
-        .facebook-icon:hover {
-          background: darkblue;
-        }
 
         /* --- SKYPE --- */
 
@@ -217,8 +146,8 @@
   </head>
   <body>
     <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-    <header class="clearfix" style="min-height: 58px; ">
-      <div class="navbar navbar-default navbar-logintofrench navbar-fixed-top" role="navigation">
+    <header id="header" class="clearfix" >
+      <div id="header-first"  class="navbar navbar-default navbar-static-top navbar-logintofrench" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -227,16 +156,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            {% block navbarbrand %}
-              <a class="navbar-brand" href="{{ path('frontend_homepage') }}">
-                <h3> 
-                  <img src="/img/logo.png" id="logo" /> Login to French
-                </h3>
-              </a>
-            {% endblock %}
+            <a class="navbar-brand" href="{{ path('frontend_homepage') }}">
+              <h3> 
+                <img src="/img/logo.png" id="logo" /> Login to French
+              </h3>
+            </a>
           </div>
+
+        </div>
+      </div>
+      <div class="navbar navbar-default navbar-static-top navbar-logintofrench" role="navigation">
+        <div class="container">
           <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
               {% block navbarrightli %}
                 <li>
                   <a class="scrollTo" href="{{ path('frontend_homepage') }}" data-tag="#home" >{{ 'header.home'|trans }}</a>
@@ -245,7 +177,13 @@
                   <a class="scrollTo" href="{{ path('frontend_about') }}" data-tag="#about">{{ 'header.about'|trans }}</a>
                 </li>
                 <li>
+                  <a class="scrollTo" href="{{ path('frontend_online') }}" data-tag="#lessons">{{ 'header.online'|trans }}</a>
+                </li>
+                <li>
                   <a class="scrollTo" href="{{ path('frontend_lessons') }}" data-tag="#lessons">{{ 'header.lessons'|trans }}</a>
+                </li>
+                <li>
+                  <a class="scrollTo" href="{{ path('frontend_translations') }}" data-tag="#lessons">{{ 'header.translations'|trans }}</a>
                 </li>
                 <li>
                   <a class="scrollTo" href="{{ path('frontend_contact') }}" data-tag="#contact">{{ 'header.contact'|trans }}</a>

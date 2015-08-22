@@ -19,6 +19,14 @@ class DefaultController extends Controller {
     return $this->render('MainPageFrontendBundle:Default:lessons.html.twig');
   }
 
+  public function translationsAction() {
+    return $this->render('MainPageFrontendBundle:Default:lessons.html.twig');
+  }
+
+  public function onlineAction() {
+    return $this->render('MainPageFrontendBundle:Default:online.html.twig');
+  }
+
   public function contactAction() {
     return $this->render('MainPageFrontendBundle:Default:contact.html.twig');
   }
