@@ -20,7 +20,7 @@ class DefaultController extends Controller {
   }
 
   public function translationsAction() {
-    return $this->render('MainPageFrontendBundle:Default:lessons.html.twig');
+    return $this->render('MainPageFrontendBundle:Default:translations.html.twig');
   }
 
   public function onlineAction() {
