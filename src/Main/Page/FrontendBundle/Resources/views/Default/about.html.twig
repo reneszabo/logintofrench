@@ -1,5 +1,18 @@
 {% extends 'MainPageFrontendBundle:Default:base.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  <style type="text/css">
+    #testimonials .col-md-4{
+     margin-bottom: 20px;
+    }
 
+    .carousel-control.left, .carousel-control.right {
+      background-image: none; 
+      filter: none;
+      background-repeat: no-repeat; 
+    }
+  </style>
+{% endblock stylesheets %}
 
 {% block body %}
   <div class="container padding-top-bottom">
@@ -34,38 +47,72 @@
         <h2>Testimonials</h2>
       </div>  
     </div>  
-    <div class="row">
-      <div class="col-md-4">
-        <div class="text-justify"> 
-          <div>
-            After taking French lessons, both in the US and France, I’ve found that Laura’s attitude and method are refreshing and fun. Lots of conversation and, at the same time, grammar and vocabulary. She is easy going and very knowledgeable. I definitely recommend her. I notice my improvement every time I speak or read. 
+    <section id="testimonials">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-justify"> 
+            <div>
+              After taking French lessons, both in the US and France, I’ve found that Laura’s attitude and method are refreshing and fun. Lots of conversation and, at the same time, grammar and vocabulary. She is easy going and very knowledgeable. I definitely recommend her. I notice my improvement every time I speak or read. 
+            </div>
+            <div class="text-right">
+              <span class="label label-info"> Sandra Tartonne, Miami FL </span>
+            </div>
           </div>
-          <div class="text-right">
-            <span class="label label-info"> Sandra Tartonne, Miami FL </span>
+        </div>
+        <div class="col-md-4">
+          <div class=" text-justify"> 
+            <div>
+              I highly recommend Laura for French tutoring. She is passionate about teaching, and has an approach that has increased my fluency in French. She has the skillfulness to choose interesting topics to discuss while she provides a solid structure to my French. Her pricing is very competitive and her flexibility really helpful. 
+            </div>
+            <div class="text-right">
+              <span class="label label-info"> Adrian Lechter, Miami FL </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" text-justify"> 
+            <div>
+              Gracias a Laura, hoy puedo decir que vivo en Montréal, sus clases son muy dinámicas y tiene una técnica muy buena para adquirir mucha fluidez, es una profesora muy enérgica y con mucho conocimiento de francés y el proceso de inmigración a Québec.
+            </div>
+            <br>
+            <div class="text-right">
+              <span class="label label-info">  Clara Rendón. Montréal</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class=" text-justify"> 
-          <div>
-            I highly recommend Laura for French tutoring. She is passionate about teaching, and has an approach that has increased my fluency in French. She has the skillfulness to choose interesting topics to discuss while she provides a solid structure to my French. Her pricing is very competitive and her flexibility really helpful. 
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-justify"> 
+            <div>
+              Después de varios intentos fallidos para obtener mi diploma B2, decidí empezar clase con Laura. Con un dinámico pero exigente método, después dos meses logré un excelente resultado. Hoy estoy en Francia.
+            </div>
+            <div class="text-right">
+              <span class="label label-info"> Margarita Ovalle, Poitiers  </span>
+            </div>
           </div>
-          <div class="text-right">
-            <span class="label label-info"> Adrian Lechter, Miami FL </span>
+        </div>
+        <div class="col-md-4">
+          <div class=" text-justify"> 
+            <div>
+             Nunca olvidare el profesionalismo y dedicacion de Laura, disfrute mucho de mis clases de Frances, en las cuales aprendi mucho y me abrio muchas puertas en mi profesion.
+            </div>
+            <div class="text-right">
+              <span class="label label-info"> B.Milena Peña Quevedo, Toronto </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" text-justify"> 
+            <div>
+            </div>
+            <br>
+            <div class="text-right">
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class=" text-justify"> 
-          <div>
-            Gracias a Laura, hoy puedo decir que vivo en Montréal, sus clases son muy dinámicas y tiene una técnica muy buena para adquirir mucha fluidez, es una profesora muy enérgica y con mucho conocimiento de francés y el proceso de inmigración a Québec.
-          </div>
-          <br>
-          <div class="text-right">
-            <span class="label label-info">  Clara Rendón. Montréal</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>  
 {% endblock body %}
