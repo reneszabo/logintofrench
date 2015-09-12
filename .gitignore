@@ -1,3 +1,14 @@
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+/app/config/parameters.yml
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+/bin/
+/composer.phar
+/vendor/
+/web/bundles/
 # -- Symfony2 -----------------------------------------
 app/bootstrap.php.cache
 app/bootstrap_cache.php.cache
@@ -11,17 +22,19 @@ web/bundles/*
 web/uploads/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
-web/css/*
-web/js/*
+bin
+bin/*
 com
 # -- Composer -----------------------------------------
 composer.phar
 composer.lock
+
 # -- PHPUnit ------------------------------------------
 app/phpunit.xml  
 
-# netbeans
-nbproject/
+# -- Netbeans  ----------------------------------------
+nbproject/*
+/nbproject/
 nbproject/private/
 build/
 nbbuild/
@@ -29,8 +42,6 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
-bin/
-
 # -- Sistemas Operativos ------------------------------
 # Windows
 Thumbs.db
