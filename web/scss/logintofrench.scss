@@ -1,0 +1,70 @@
+/* 
+    Created on : 12-Sep-2015, 12-Sep-2015 11:03:37 AM
+    Author     : Rene Ramirez
+*/
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "logintofrench/variables";
+
+body{
+  font-family: "Roboto",  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body > header {
+
+  height: 90px;
+  .logintofrench-navbar-default{
+    background: rgba(255,255,255,0.6);
+    border:none;
+  }
+  #logo{
+    padding-top: 0;
+    img{
+      height: 80px;
+    }
+  }
+  .navbar-toggle.collapsed{
+    margin-top: 24.5px;
+    margin-bottom: 24.5px;
+  }
+  #logintofrench-menu{
+    border-top: none;
+    .navbar-nav{
+      /*background: rgba(255,255,255,0.4);*/
+    }
+    a {
+      color: $logintofrench-color-primary;
+      margin: 18.5px 5px;
+      padding: 12.5px 5px;
+      border: 1px transparent solid;
+      border-radius: 5px;
+      &:hover{
+        border: 1px $logintofrench-color-primary solid;
+      }
+      &.active{
+        background-color: $logintofrench-color-primary;
+        color: white;
+        border: 1px $logintofrench-color-primary solid;
+      }
+      &.social{
+        margin: 17.5px 1px;
+        padding: 12.5px 1px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        &:hover{
+          border: 1px transparent solid;
+          color: $logintofrench-color-secondary;
+        }
+      }
+    }
+    li.social{
+      a.social:first-child {
+        padding-left: 9px;
+      }
+    }
+
+  }
+
+}
+
+
+/* SOCIAL */
+

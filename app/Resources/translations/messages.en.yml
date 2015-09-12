@@ -1,0 +1,11 @@
+## YAML Template.
+---
+header:
+  about: About
+  staff: Staff
+  lessons: Lessons
+  online: Online courses
+  study: Study in France
+  translations: Translations
+  contact: Contact
+  

@@ -1,0 +1,53 @@
+/* 
+    Created on : 12-Sep-2015, 12-Sep-2015 11:03:37 AM
+    Author     : Rene Ramirez
+*/
+/* 
+    Created on : 15-Jul-2015, 8:54:37 PM
+    Author     : Rene Roberto Ramirez Szabo <rene.szabo@gmail.com>
+*/
+body {
+  font-family: "Roboto",  "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body > header {
+  height: 90px; }
+  body > header .logintofrench-navbar-default {
+    background: rgba(255, 255, 255, 0.6);
+    border: none; }
+  body > header #logo {
+    padding-top: 0; }
+    body > header #logo img {
+      height: 80px; }
+  body > header .navbar-toggle.collapsed {
+    margin-top: 24.5px;
+    margin-bottom: 24.5px; }
+  body > header #logintofrench-menu {
+    border-top: none; }
+    body > header #logintofrench-menu .navbar-nav {
+      /*background: rgba(255,255,255,0.4);*/ }
+    body > header #logintofrench-menu a {
+      color: #333366;
+      margin: 18.5px 5px;
+      padding: 12.5px 5px;
+      border: 1px transparent solid;
+      border-radius: 5px; }
+      body > header #logintofrench-menu a:hover {
+        border: 1px #333366 solid; }
+      body > header #logintofrench-menu a.active {
+        background-color: #333366;
+        color: white;
+        border: 1px #333366 solid; }
+      body > header #logintofrench-menu a.social {
+        margin: 17.5px 1px;
+        padding: 12.5px 1px;
+        padding-top: 10px;
+        padding-bottom: 0px; }
+        body > header #logintofrench-menu a.social:hover {
+          border: 1px transparent solid;
+          color: #E52D3B; }
+    body > header #logintofrench-menu li.social a.social:first-child {
+      padding-left: 9px; }
+
+/* SOCIAL */
+
+/*# sourceMappingURL=logintofrench.css.map */

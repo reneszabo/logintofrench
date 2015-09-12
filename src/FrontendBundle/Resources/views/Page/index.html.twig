@@ -1,0 +1,25 @@
+{% extends 'FrontendBundle:Default:base.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  <style type=text/css>
+    body{
+      background: url(/img/backgound-001.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      {# filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/backgound-001.jpg', sizingMethod='scale');
+       -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/backgound-001.jpg', sizingMethod='scale')";#}
+    }
+  </style>
+{% endblock stylesheets %}
+{% block body %}
+  {{ include('FrontendBundle:Default:header.html.twig') }}
+  <div class="container">
+  </div>
+{% endblock %}
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript">
+  </script>
+{% endblock javascripts %}

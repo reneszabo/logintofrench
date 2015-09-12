@@ -1,0 +1,22 @@
+frontend_homepage:
+    path:     /
+    defaults: { _controller: FrontendBundle:Default:index }
+frontend_staff:
+    path:     /staff
+    defaults: { _controller: FrontendBundle:Default:staff }
+frontend_lessons:
+    path:     /lessons
+    defaults: { _controller: FrontendBundle:Default:lessons }
+frontend_online:
+    path:     /online-courses
+    defaults: { _controller: FrontendBundle:Default:online }
+frontend_study:
+    path:     /study-in-france
+    defaults: { _controller: FrontendBundle:Default:study }
+frontend_translations:
+    path:     /translations
+    defaults: { _controller: FrontendBundle:Default:translations }
+frontend_contact:
+    path:     /contact
+    defaults: { _controller: FrontendBundle:Default:contact }
+   

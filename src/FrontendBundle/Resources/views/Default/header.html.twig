@@ -1,0 +1,54 @@
+{% set routeName = app.request.attributes.get('_route') %}
+<header >
+  <div id="content" class="navbar navbar-default logintofrench-navbar-default navbar-fixed-top"  role="banner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".logintofrench-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" href="{{ path('frontend_homepage') }}" class="navbar-brand"> 
+          <img alt="Brand" src="/img/logo.png" >
+        </a>
+      </div>
+      <nav id="logintofrench-menu" class="collapse navbar-collapse logintofrench-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ path('frontend_homepage') }}" class="{% if  routeName == 'frontend_homepage'%}active{%endif%}">{{ 'header.about'|trans }}</a></li>
+          <li><a href="{{ path('frontend_staff') }}" class="{% if  routeName == 'frontend_staff'%}active{%endif%}">{{ 'header.staff'|trans }}</a></li>
+          <li><a href="{{ path('frontend_lessons') }}" class="{% if  routeName == 'frontend_lessons'%}active{%endif%}">{{ 'header.lessons'|trans }}</a></li>
+          <li><a href="{{ path('frontend_online') }}" class="{% if  routeName == 'frontend_online'%}active{%endif%}">{{ 'header.online'|trans }}</a></li>
+          <li><a href="{{ path('frontend_study') }}" class="{% if  routeName == 'frontend_study'%}active{%endif%}">{{ 'header.study'|trans }}</a></li>
+          <li><a href="{{ path('frontend_translations') }}" class="{% if  routeName == 'frontend_translations'%}active{%endif%}">{{ 'header.translations'|trans }}</a></li>
+          <li><a href="{{ path('frontend_contact') }}" class="{% if  routeName == 'frontend_contact'%}active{%endif%}">{{ 'header.contact'|trans }}</a></li>
+          <li class="social">
+            <a href="https://www.facebook.com/thekeytolearnfrench/" target="_blank" class="social">
+              <span class="fa-stack ">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/logintofrench/" target="_blank" class="social">
+              <span class="fa-stack ">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/logintofrench/" target="_blank" class="social">
+              <span class="fa-stack ">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+## YAML Template.
+---
+header:
+  about: Sobre nosotros
+  staff: Equipo
+  lessons: Lecciones
+  online: Cursos en Linea
+  study: Entudia en Francia
+  translations: Traducciones
+  contact: Contactanos
+  
