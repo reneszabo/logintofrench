@@ -6,48 +6,97 @@
     Created on : 15-Jul-2015, 8:54:37 PM
     Author     : Rene Roberto Ramirez Szabo <rene.szabo@gmail.com>
 */
-body {
+html, body {
+  color: #333;
   font-family: "Roboto",  "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-body > header {
-  height: 90px; }
-  body > header .logintofrench-navbar-default {
-    background: rgba(255, 255, 255, 0.6);
-    border: none; }
-  body > header #logo {
-    padding-top: 0; }
-    body > header #logo img {
-      height: 80px; }
-  body > header .navbar-toggle.collapsed {
-    margin-top: 24.5px;
-    margin-bottom: 24.5px; }
-  body > header #logintofrench-menu {
-    border-top: none; }
-    body > header #logintofrench-menu .navbar-nav {
-      /*background: rgba(255,255,255,0.4);*/ }
-    body > header #logintofrench-menu a {
-      color: #333366;
-      margin: 18.5px 5px;
-      padding: 12.5px 5px;
-      border: 1px transparent solid;
-      border-radius: 5px; }
-      body > header #logintofrench-menu a:hover {
-        border: 1px #333366 solid; }
-      body > header #logintofrench-menu a.active {
-        background-color: #333366;
-        color: white;
-        border: 1px #333366 solid; }
-      body > header #logintofrench-menu a.social {
-        margin: 17.5px 1px;
-        padding: 12.5px 1px;
-        padding-top: 10px;
-        padding-bottom: 0px; }
-        body > header #logintofrench-menu a.social:hover {
-          border: 1px transparent solid;
-          color: #E52D3B; }
-    body > header #logintofrench-menu li.social a.social:first-child {
-      padding-left: 9px; }
+/*TEXT*/
+.logintofrench-text-seconday {
+  color: #E52D3B; }
 
-/* SOCIAL */
+.carousel-indicators {
+  position: relative;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0px; }
+  .carousel-indicators li {
+    border: 1px solid #333366; }
+    .carousel-indicators li.active {
+      background-color: #333366; }
+
+.panel {
+  border-radius: 0px; }
+  .panel.lessons {
+    background-color: #333366;
+    border-color: #444488;
+    color: white; }
+    .panel.lessons h4 {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .panel.lessons hr {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .panel.lessons .view-more .h4, .panel.lessons .view-more h5 {
+      display: inline-block;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .panel.lessons .view-more h5 {
+      margin-left: 5px; }
+    .panel.lessons .view-more:hover {
+      font-weight: bold !important;
+      cursor: pointer; }
+  .panel.details .panel-body {
+    padding: 0; }
+    .panel.details .panel-body img {
+      width: 100%; }
+
+body > header .logintofrench-navbar-default {
+  background: rgba(255, 255, 255, 0.6);
+  border: none; }
+body > header #logo {
+  padding-top: 0; }
+  body > header #logo img {
+    height: 80px; }
+body > header .navbar-toggle.collapsed {
+  margin-top: 24.5px;
+  margin-bottom: 24.5px; }
+body > header #logintofrench-menu {
+  border-top: none; }
+  body > header #logintofrench-menu .navbar-nav {
+    /*background: rgba(255,255,255,0.4);*/ }
+  body > header #logintofrench-menu a {
+    color: #333366;
+    margin: 18.5px 5px;
+    padding: 12.5px 5px;
+    border: 1px transparent solid;
+    border-radius: 5px; }
+    body > header #logintofrench-menu a:hover {
+      border: 1px #333366 solid; }
+    body > header #logintofrench-menu a.active {
+      background-color: #333366;
+      color: white;
+      border: 1px #333366 solid; }
+      body > header #logintofrench-menu a.active:hover {
+        border: 1px #4d4d99 solid;
+        background-color: #4d4d99; }
+    body > header #logintofrench-menu a.social {
+      margin: 17.5px 1px;
+      padding: 12.5px 1px;
+      padding-top: 10px;
+      padding-bottom: 0px; }
+      body > header #logintofrench-menu a.social:hover {
+        border: 1px transparent solid;
+        color: #4d4d99; }
+  body > header #logintofrench-menu li.social a.social:first-child {
+    padding-left: 9px; }
+
+body > header + section {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=logintofrench.css.map */

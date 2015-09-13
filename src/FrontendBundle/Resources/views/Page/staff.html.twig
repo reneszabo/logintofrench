@@ -13,8 +13,94 @@
 {% endblock stylesheets %}
 {% block body %}
   {{ include('FrontendBundle:Default:header.html.twig') }}
-  <div class="container">
-  </div>
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div id="carousel-comments" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <article class="text-justify">
+                    <p>
+                      After taking French lessons, both in the US and France, I’ve found that Laura’s attitude and method are refreshing and fun. Lots of conversation and, at the same time, grammar and vocabulary. She is easy going and very knowledgeable. I definitely recommend her. I notice my improvement every time I speak or read.
+                    </p>
+                    <p class="text-right logintofrench-text-seconday">
+                      Sandra Tartonne, Miami FL
+                    </p>
+                  </article>
+                  <hr>
+                  <article class="text-justify">
+                    <p>
+                      I highly recommend Laura for French tutoring. She is passionate about teaching, and has an approach that has increased my fluency in French. She has the skillfulness to choose interesting topics to discuss while she provides a solid structure to my French. Her pricing is very competitive and her flexibility really helpful.
+                    </p>
+                    <p class="text-right logintofrench-text-seconday">
+                      Adrian Lechter, Miami FL
+                    </p>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-justify">
+                    <p>
+                      Nunca olvidare el profesionalismo y dedicación de Laura, disfruté mucho de mis clases de Francés, en las cuales aprendí mucho y me abrió muchas puertas en mi profesión.
+                    </p>
+                    <p class="text-right logintofrench-text-seconday">
+                      B. Milena Peña Quevedo, Toronto
+                    </p>
+                  </article>
+                  <hr>
+                  <article class="text-justify">
+                    <p>
+                      Después de varios intentos fallidos para obtener mi diploma B2, decidí empezar clase con Laura. Con un dinámico pero exigente método, después dos meses logré un excelente resultado. Hoy estoy en Francia.
+                    </p>
+                    <p class="text-right logintofrench-text-seconday">
+                      Margarita Ovalle, Poitiers
+                    </p>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-justify">
+                    <p>
+                      Gracias a Laura, hoy puedo decir que vivo en Montreal, sus clases son muy dinámicas y tiene una técnica muy buena para adquirir mucha fluidez, es una profesora muy enérgica y con mucho conocimiento de francés y el proceso de inmigración a Quebec.
+                    </p>
+                    <p class="text-right logintofrench-text-seconday">
+                      Clara Rendón. Montreal
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-comments" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-comments" data-slide-to="1"></li>
+                <li data-target="#carousel-comments" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="panel panel-default">
+          <div class="panel-body text-justify" >
+            <h3 style="margin-top: 0;">Meet our director Laura Salom</h3>
+            <p>
+              For over eighteen years, I have been studying the French culture and the education system. My French studies began when I was three, at the Liceo Frances Louis Pasteur in Bogota. 
+              I have since obtained a great deal of experience teaching French to both children and adults, including home tutoring children from bilingual schools, and teaching adults who were preparing to travel to Canada and France. I worked for many language schools and private schools. 
+            </p>
+            <p>
+              Six years ago, I began my career as a private French tutor with my own method.
+            </p>
+            <p>
+              Login to French was born two years ago aiming at offering online private tutoring adapting to the needs and times of our students.
+            </p>
+            <p>
+              We are more than 15 online private teachers from South America, France and United states.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
 {% block javascripts %}
   {{ parent() }}

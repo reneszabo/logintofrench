@@ -14,7 +14,7 @@ class DefaultController extends Controller {
     return $this->render('FrontendBundle:Page:staff.html.twig');
   }
   public function lessonsAction() {
-    return $this->render('FrontendBundle:Page:staff.html.twig');
+    return $this->render('FrontendBundle:Page:lessons.html.twig');
   }
   public function onlineAction() {
     return $this->render('FrontendBundle:Page:staff.html.twig');

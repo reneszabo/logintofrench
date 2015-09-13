@@ -1,0 +1,90 @@
+{% extends 'FrontendBundle:Default:base.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  <style type=text/css>
+    body{
+      background: url(/img/backgound-002.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    } 
+  </style>
+{% endblock stylesheets %}
+{% block body %}
+  {{ include('FrontendBundle:Default:header.html.twig') }}
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="panel panel-default lessons">
+          <div class="panel-body text-center">
+            <h4>Private Lessons</h4>
+            <hr>
+            <div class="view-more">
+              <span class="logintofrench-text-seconday h4">+</span> <h5>VIEW MORE</h5>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default details">
+          <div class="panel-body text-center">
+            <img src="/img/lessons-001.jpg" alt="Private Lessons" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="panel panel-default lessons">
+          <div class="panel-body text-center">
+            <h4>Groups</h4>
+            <hr>
+            <div class="view-more">
+              <span class="logintofrench-text-seconday h4">+</span> <h5>VIEW MORE</h5>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default details">
+          <div class="panel-body text-center">
+            <img src="/img/lessons-002.jpg" alt="Groups" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="panel panel-default lessons">
+          <div class="panel-body text-center">
+            <h4>Kids</h4>
+            <hr>
+            <div class="view-more">
+              <span class="logintofrench-text-seconday h4">+</span> <h5>VIEW MORE</h5>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default details">
+          <div class="panel-body text-center">
+            <img src="/img/lessons-003.jpg" alt="Kids" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="panel panel-default lessons">
+          <div class="panel-body text-center">
+            <h4>Online private lessons</h4>
+            <hr>
+            <div class="view-more">
+              <span class="logintofrench-text-seconday h4">+</span> <h5>VIEW MORE</h5>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default details">
+          <div class="panel-body text-center">
+            <img src="/img/lessons-004.jpg" alt="skype - Online private lessons" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+{% endblock %}
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript">
+  </script>
+{% endblock javascripts %}
